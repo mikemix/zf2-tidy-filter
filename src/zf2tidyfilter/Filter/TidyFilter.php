@@ -2,14 +2,14 @@
 namespace zf2tidyfilter\Filter;
 
 use Zend\Filter\FilterInterface;
-use Tidy;
+use tidy;
 
 final class TidyFilter implements FilterInterface
 {
     /**
      * Tidy object.
      *
-     * @var Tidy
+     * @var tidy
      */
     private $tidy;
 
@@ -43,7 +43,7 @@ final class TidyFilter implements FilterInterface
     public function getTidy()
     {
         if (! $this->tidy) {
-            $this->setTidy(new Tidy());
+            $this->setTidy(new tidy());
         }
         
         return $this->tidy;
@@ -54,7 +54,7 @@ final class TidyFilter implements FilterInterface
      *
      * @param Tidy $tidy
      */
-    public function setTidy(Tidy $tidy)
+    public function setTidy(tidy $tidy)
     {
         $this->tidy = $tidy;
     }
