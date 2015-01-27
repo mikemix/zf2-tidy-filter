@@ -29,7 +29,8 @@ final class TidyFilter implements FilterInterface
     */
     public function filter($value)
     {
-        $tidy = $this->getTidy()->parseString($value, $this->getOptions());
+        $tidy = $this->getTidy();
+        $tidy->parseString($value, $this->getOptions());
         $tidy->cleanRepair();
         
         return $tidy;
