@@ -1,0 +1,16 @@
+{
+  "name": "mikemix/zf2-tidy-filter",
+  "type": "library",
+  "description": "TIDY filter for Zend Framework 2",
+  "keywords": ["pdf","dompdf", "zf2"],
+  "homepage": "http://www.phpcontext.com",
+  "require": {
+    "php": ">=5.3.0",
+    "ext-tidy": "*"
+  },
+  "autoload": {
+    "psr-0": {
+      "zf2tidyfilter": "src/"
+    }
+  }
+}
