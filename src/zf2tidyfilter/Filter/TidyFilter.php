@@ -29,10 +29,10 @@ final class TidyFilter implements FilterInterface
     */
     public function filter($value)
     {
-        $this->getTidy()->parseString($value, $this->getOptions());
-        $this->getTidy()->cleanRepair();
+        $tidy = $this->getTidy()->parseString($value, $this->getOptions());
+        $tidy->cleanRepair();
         
-        return $this->getTidy()->__toString();
+        return $tidy;
     }
     
     /**
