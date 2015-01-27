@@ -2,7 +2,7 @@
   "name": "mikemix/zf2-tidy-filter",
   "type": "library",
   "description": "TIDY filter for Zend Framework 2",
-  "keywords": ["zf2","tidy", "xss"],
+  "keywords": ["zf2","tidy"],
   "homepage": "http://www.phpcontext.com",
   "require": {
     "php": ">=5.3.0"
