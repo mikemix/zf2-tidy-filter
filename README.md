@@ -2,11 +2,12 @@
 "Tidy" filter for Zend Framework 2
 
 Usage in forms
-==============
+--------------
 
 Example form:
 
 ```php
+<?php
 namespace Application\Form;
 
 use Zend\Form\Form as ZendForm;
@@ -28,7 +29,7 @@ class ExampleForm extends ZendForm implements InputFilterProviderInterface
             'html' => [
                 'required' => true,
                 'filters'  => [
-                    ['name' => 'zf2filter\Filter\TidyFilter'
+                    ['name' => 'zf2filter\Filter\TidyFilter']
                 ],
             ],
         ];
