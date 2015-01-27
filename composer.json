@@ -6,7 +6,7 @@
   "homepage": "http://www.phpcontext.com",
   "require": {
     "php": ">=5.3.0",
-    "ext-tidy": "*"
+    "lib-tidy": "*"
   },
   "autoload": {
     "psr-0": {
