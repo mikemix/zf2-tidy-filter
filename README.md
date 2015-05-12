@@ -10,10 +10,11 @@ Example form:
 <?php
 namespace Application\Form;
 
-use Zend\Form\Form as ZendForm;
+use Zend\Form\Form;
 use Zend\InputFilter\InputFilterProviderInterface;
+use zf2filter\Filter\TidyFilter;
 
-class ExampleForm extends ZendForm implements InputFilterProviderInterface
+class ExampleForm extends Form implements InputFilterProviderInterface
 {
     function init()
     {
@@ -29,7 +30,7 @@ class ExampleForm extends ZendForm implements InputFilterProviderInterface
             'html' => [
                 'required' => true,
                 'filters'  => [
-                    ['name' => 'zf2filter\Filter\TidyFilter']
+                    ['name' => TidyFilter::class]
                 ],
             ],
         ];
